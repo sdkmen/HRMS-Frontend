@@ -9,8 +9,8 @@ const Menu = () => {
         <Navbar>
           <Container>
             <Navbar.Brand href="/">HRMS</Navbar.Brand>
-            <Navbar.Toggle/>
-            <Navbar.Collapse>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
                 <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="/jobadverts">Job Adverts</Nav.Link></Nav.Item>
