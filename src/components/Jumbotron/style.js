@@ -2,7 +2,7 @@ import styled from "styled-components";
 import interview from "../../assets/interview.jpg"
 
 export const Jumbo = styled.div`
-height: 865px;
+height: 895px;
 width: 100%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -18,4 +18,15 @@ z-index: 1;
 padding-top: 30vh;
 `
 
-export const ButtonGroup = styled.div``
+export const ButtonGroup = styled.div`
+.button{
+  background-color: #f8f7f9;
+  border:0px;
+  font-weight: bold;
+  &:hover {
+    background-color: #7e6551;
+    color: #f8f7f9;
+    transition: .3s all ease-in-out;
+  }
+}
+`
