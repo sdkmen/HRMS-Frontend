@@ -8,7 +8,7 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
-background-image: linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.8)) , url(${interview});
+background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${interview});
 z-index: -2;
 `
 

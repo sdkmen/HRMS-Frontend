@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
+.h2 {
+  color: #063640;
+}
+.card {
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  color: #474545;
+}
 .card-body, .card-title {
   text-align: left;
 }

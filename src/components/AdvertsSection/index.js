@@ -19,8 +19,8 @@ const AdvertsSection = () => {
         {
           jobAdverts.map(jobAdvert => (
             <Card className="mb-3">
-              <Card.Header as="h5">{jobAdvert.companyName}</Card.Header>
               <Card.Body>
+                <h2 className="h2">{jobAdvert.companyName}</h2>
                 <Card.Title>{jobAdvert.jobTitle}</Card.Title>
                 <Card.Text>{jobAdvert.jobDefinition}</Card.Text>
                 <Link to={`/jobadvertdetail/${jobAdvert.id}`}>
