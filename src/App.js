@@ -6,6 +6,7 @@ import Employers from './pages/Employers';
 import JobAdverts from './pages/JobAdverts';
 import NoMatch from './pages/NoMatch';
 import JobAdvertDetails from './pages/JobAdvertDetails';
+import Cv from './pages/Cv';
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,7 @@ function App() {
             <Route path="/employers" component={ Employers }/>
             <Route path="/jobadverts" component={ JobAdverts }/>
             <Route path="/jobadvertdetail/:id" component={ JobAdvertDetails }/>
+            <Route path="/cv/:id" component={ Cv }/>
             <Route component={ NoMatch }/>
           </Switch>
         </div>

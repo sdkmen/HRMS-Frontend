@@ -9,10 +9,10 @@ const JobAdverts = () => {
       <h3 className="mt-3 fw-bold">JOB ADVERTS</h3>
       <Container>
         <Row>
-          <Col sm={12} md={5} lg={3}>
+          <Col sm={12} md={12} lg={12} xl={4}>
             <AdvertSearchSide />
           </Col>
-          <Col sm={12} md={7} lg={9}>
+          <Col sm={12} md={12} lg={12} xl={8}>
             <AdvertsSection/>
           </Col>
         </Row>

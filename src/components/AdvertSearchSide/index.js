@@ -15,7 +15,7 @@ const AdvertSearchSide = () => {
   return (
     <Styles>
       <div>
-        <Card className="mt-4">
+        <Card className="mt-4 mx-auto">
           <Card.Body>
             <Card.Title><h4>Search Job Advert</h4></Card.Title>
             <Form>
