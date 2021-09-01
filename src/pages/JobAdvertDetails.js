@@ -19,7 +19,7 @@ const JobAdvertDetails = () => {
         <div>
           {
             jobAdvertDetails.map(jobAdvertDetail => (
-              <Card className="mb-4">
+              <Card className="mb-5 mt-5">
                 <Card.Body className="ms-3">
                   <Card.Title style={{ float: 'left' }} className="mt-3"><h1>{jobAdvertDetail.companyName}</h1></Card.Title>
                   <Card.Text className="city"><h5>City: {jobAdvertDetail.cityName}</h5></Card.Text>

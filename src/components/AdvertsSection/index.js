@@ -18,12 +18,12 @@ const AdvertsSection = () => {
       <div>
         {
           jobAdverts.map(jobAdvert => (
-            <Card className="mb-3">
+            <Card className="mb-4">
               <Card.Body>
                 <h2 className="h2">{jobAdvert.companyName}</h2>
                 <Card.Title>{jobAdvert.jobTitle}</Card.Title>
                 <Card.Text>{jobAdvert.jobDefinition}</Card.Text>
-                <Link to={`/jobadvertdetail/${jobAdvert.id}`}>
+                <Link to={`/jobadvert/detail/${jobAdvert.id}`}>
                   <Button className="button">Show Details</Button>
                 </Link>
                 <Card.Text className="deadline d-inline">Deadline: {jobAdvert.deadline}</Card.Text>

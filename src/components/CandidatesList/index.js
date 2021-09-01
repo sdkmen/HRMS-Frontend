@@ -12,25 +12,25 @@ const CandidatesList = () => {
     candidateService.getAllCandidates().then(result => setCandidates(result.data.data))
   })
   return (
-    <Styles>
+    <Styles className="mb-5">
       <Row>
         {
           candidates.map(candidate => (
             <Col xl={3} md={6} lg={4} xs={12}>
-              <Card className="mt-4 mx-auto">
+              <Card className="mt-4 mx-auto mb-3">
                 <Card.Img className="card-img mt-3" variant="top" src={candidate.pictureUrl} />
                 <Card.Body>
-                  <Card.Title>
+                  <Card.Title className="mt-1">
                     {candidate.firstName} {candidate.lastName}
                   </Card.Title>
                   <Card.Text className="mt-4">
                     <h6>{candidate.email}</h6>
                   </Card.Text>
                   <Card.Text>
-                    <h6>Birth Year: {candidate.birthOfYear}</h6>
+                    <h6>{candidate.birthOfYear}</h6>
                   </Card.Text>
                   <Link to={`/cv/${candidate.id}`}>
-                    <Button className="mt-3" variant="primary">Show CV</Button>
+                    <Button className="mt-3 button" variant="primary">Show CV</Button>
                   </Link>
                 </Card.Body>
               </Card>

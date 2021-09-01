@@ -1,5 +1,5 @@
 import React from "react"
-import { Jumbo, Title, ButtonGroup } from './style'
+import { Jumbo, Title } from './style'
 import { Container, Button } from "react-bootstrap"
 import {
   Link
@@ -17,17 +17,11 @@ const Jumbotron = () => {
             </p>
           </Container>
         </Title>
-        <ButtonGroup className="mt-5">
-          <Link to="/jobadverts">
-            <Button className="m-3 button" variant="light">Job Adverts</Button>
-          </Link>
-          <Link to="/candidates">
-            <Button className="m-3 button" variant="light">Candidates</Button>
-          </Link>
-          <Link to="/employers">
-            <Button className="m-3 button" variant="light">Employers</Button>
-          </Link>
-        </ButtonGroup>
+        <Link to="/jobadverts">
+          <Button className="button mb-5 mt-5 fw-light" variant="light">
+            Get Started
+          </Button>
+        </Link>
       </div>
     </Jumbo>
   )

@@ -26,12 +26,12 @@ const Menu = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="/signin">
-                    <Button className=" button">Sign In</Button>
+                    <Button className="button">Sign In</Button>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="signup">
-                    <Button className=" button">Sign Up</Button>
+                    <Button className="button">Sign Up</Button>
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
