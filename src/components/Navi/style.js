@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import menu from "../../assets/menu.png"
 
 export const Styles = styled.div`
 .navbar-brand {
-  color: #F6F3EE;
+  color: #fff;
   font-weight: bold;
   font-size: 2rem;
   &:hover{
@@ -21,7 +22,16 @@ export const Styles = styled.div`
 }
 .navbar-toggle {
   border: 0px;
-  background-color: #fff; 
+  background-color: #2b2d42; 
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+  background-image: url(${menu});
 }
 .button{
   background-color: #f8f7f9;
