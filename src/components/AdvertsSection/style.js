@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Styles = styled.div`
 .h2 {
-  color: #063640;
+  color: #1b3754;
 }
 .card {
   border: 0px;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   color: #474545;
 }
@@ -22,15 +23,16 @@ export const Styles = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .button {
-  background-color: #0c7489;
+  background-color: #2f5c8a;
   color: #FFFFFF;
   border: 0px;
+  border-radius: 10px;
   &:hover {
-    background-color: #119da4;
+    background-color: #366ca3;
   }
 }
 .deadline{

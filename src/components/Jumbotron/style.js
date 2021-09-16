@@ -2,9 +2,9 @@ import styled from "styled-components";
 import interview from "../../assets/interview.jpg"
 
 export const Jumbo = styled.div`
-overflow-x: hidden;
+overflow: hidden;
 align-items:center;
-height: 92.4vh;
+min-height: 92.4vh;
 width: 100%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -47,5 +47,5 @@ z-index: -2;
 export const Title = styled.div`
 color: #FFFFFF;
 z-index: 1;
-margin-top: 24vh;
+margin-top: 28vh;
 `

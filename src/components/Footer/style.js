@@ -8,7 +8,7 @@ text-align: center;
 `
 
 export const FooterLeft = styled.div`
-width: 20rem;
+width: 18rem;
 color: #fefae0;
 text-align: left;
 .title {

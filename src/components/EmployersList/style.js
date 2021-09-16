@@ -7,7 +7,7 @@ export const Styles = styled.div`
   border-radius: 15px;
   border: 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+  background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
   &:hover{
     transform: scale(1.05);
     transition: all .3s ease-in-out;
