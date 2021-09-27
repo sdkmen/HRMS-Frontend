@@ -4,7 +4,7 @@ import GrayLine from '../../assets/4.jpg'
 export const BackgroundImage = styled.div`
 overflow-x: hidden;
 height: 100%;
-min-height: 94.5vh;
+min-height: 100vh;
 width: 100%;
 background-size: cover;
 background-repeat: no-repeat;

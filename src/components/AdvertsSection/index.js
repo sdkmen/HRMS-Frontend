@@ -10,7 +10,7 @@ const AdvertsSection = () => {
 
   useEffect(() => {
     let jobAdvertService = new JobAdvertService()
-    jobAdvertService.getJobAdverts().then(result => setJobAdverts(result.data))
+    jobAdvertService.getJobAdverts().then(result => setJobAdverts(result.data.data))
   })
 
   return (

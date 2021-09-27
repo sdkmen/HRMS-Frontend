@@ -22,7 +22,7 @@ export const Styles = styled.div`
   border-top-right-radius: 15px;
 }
 .card-title{
-  margin-top: -85px;
+  margin-top: -70px;
   color: #fff;
   font-size: 2.1rem;
 }
