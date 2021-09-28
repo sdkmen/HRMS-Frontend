@@ -2,36 +2,40 @@ import styled from "styled-components";
 
 export const Styles = styled.div`
 .card{
-  width: 18rem;
+  width: 14rem;
   border: 0px;
-  border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #8BC6EC;
-  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  border-radius: 7px;
+  background-color: #42466e;
   &:hover{
     transform: scale(1.07);
     transition: .3s all ease-in-out;
   }
 }
 .card-img{
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   margin: 0 auto;
   border-radius: 50%;
   background: #ccc;
 }
-.card-title, .card-text {
+.card-title {
   color: #fff;
   margin-top: -10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card-text {
+  color: #fff;
+  margin-top: -10px;
+  font-size: 0.8rem;
 }
 .button{
   background-color: #fff;
   border: 0px;
-  color: #000;
-  &:hover {
-    color: #093028;
-    font-weight:bold;
-    transition: all .1s;
-  }
+  width: 6rem;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  color: #093028;
+  font-weight:bold;
 }
 `

@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const Styles = styled.div`
 .card {
-  width: 18rem;
-  height: 260px;
-  border-radius: 15px;
+  position: relative;
+  width: 30rem;
+  height: 80px;
+  border-radius: 5px;
   border: 0px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
+  background-color: #3a405a;
   &:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: all .3s ease-in-out;
     .card-text a{
-      color: #0082c8;
+      color: #90e0ef;
     }
   }
 }
@@ -22,20 +22,34 @@ export const Styles = styled.div`
   border-top-right-radius: 15px;
 }
 .card-title{
-  margin-top: -70px;
+  font-weight: bold;
   color: #fff;
-  font-size: 2.1rem;
+  height: 100px;
+  text-align: left;
+  float: left;
+  margin: 15px 0 0 10px;
+  font-size: 1.3rem;
 }
 .card-text {
+  margin: 3px 0 0 180px;
+  font-size: 0.9rem;
   text-align: left;
-  font-weight: bold;
-  color: #000;
+  color: #fff;
 }
-.link {
-  margin-top:60px;
+.link{
+  margin-top: -1px;
 }
 .card-text a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
+}
+.divider{
+  position: absolute;
+  width: 2px;
+  background: #fff;
+  height: 80px;
+  float: left;
+  left: 160px;
+  top: 0px;
 }
 `

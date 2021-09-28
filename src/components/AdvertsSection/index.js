@@ -20,9 +20,11 @@ const AdvertsSection = () => {
           jobAdverts.map(jobAdvert => (
             <Card className="mb-4">
               <Card.Body>
+                <p className="d-inline-block city">{jobAdvert.cityName}</p>
                 <h2 className="h2">{jobAdvert.companyName}</h2>
                 <Card.Title>{jobAdvert.jobTitle}</Card.Title>
-                <Card.Text>{jobAdvert.jobDefinition}</Card.Text>
+                <Card.Title>Number of Free Position: <p className="d-inline-block free-position-no">{jobAdvert.freePositionNo}</p></Card.Title>
+                <Card.Text className="mt-3">{jobAdvert.jobDefinition}</Card.Text>
                 <Link to={`/jobadvert/detail/${jobAdvert.id}`}>
                   <Button className="button">Show Details</Button>
                 </Link>

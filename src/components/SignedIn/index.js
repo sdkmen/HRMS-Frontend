@@ -15,7 +15,7 @@ const SignedIn = ({ signOut }) => {
           <Dropdown.Menu>
             <Dropdown.Item href="#">Profile</Dropdown.Item>
             <Dropdown.Item href="#">Settings</Dropdown.Item>
-            <Dropdown.Item href="/panel/postjobadvert">Post a job</Dropdown.Item>
+            <Dropdown.Item href="/panel/employer/postadvert">Post a job</Dropdown.Item>
             <Dropdown.Item onClick={signOut}>Sign out</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

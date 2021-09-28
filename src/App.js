@@ -1,5 +1,6 @@
 import './App.css';
 import { BackgroundImage } from './components/BackgroundImage/style';
+import 'semantic-ui-css/semantic.min.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -39,8 +40,8 @@ function App() {
             <Route path="/cv/:id" component={Cv} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
-            <Route path="/panel/postjobadvert" component={JobAdvertPost} />
-            <Route path="/panel/employee" component={EmployeePanel} />
+            <Route path="/panel/employer/postadvert" component={JobAdvertPost} />
+            <Route path="/panel/employee/unconfirmedadverts" component={EmployeePanel} />
             <Route component={NoMatch} />
           </Switch>
           {!isPanelRendering && <Footer />}

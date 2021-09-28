@@ -4,12 +4,19 @@ import CandidatesList from '../components/CandidatesList'
 
 const Candidates = () => {
   return (
-    <div>
       <Container>
-      <h3 className="mt-3 fw-bold">CANDIDATES</h3>
-        <CandidatesList/>
+        <h3
+          style={{
+            fontSize: "4rem",
+            textAlign: "right",
+            fontFamily: "'Bebas Neue', cursive",
+            letterSpacing: "1rem",
+            textShadow: "4px 5px #ccc",
+            color: "#42466e"
+          }}
+          className="mt-4 fw-bold">CANDIDATES</h3>
+        <CandidatesList />
       </Container>
-    </div>
   )
 }
 

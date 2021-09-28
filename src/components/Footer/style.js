@@ -25,9 +25,10 @@ display: flex;
 .p {
   width: 10rem;
   float:left;
+  margin-top: 10px;
   color: #f2e9e4;
   &:hover{
-    color: #86b2df;
+    text-decoration: underline;
   }
 }
 `

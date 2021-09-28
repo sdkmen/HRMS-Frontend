@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import EmployerService from '../../services/employerService'
 import { Styles } from './style'
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import SkyPic from '../../assets/sky.jpg'
 
 const EmployersList = () => {
   const [employers, setEmployers] = useState([])
@@ -17,12 +16,12 @@ const EmployersList = () => {
         <Row>
           {
             employers.map(employer => (
-              <Col xl={3} md={6} lg={4} xs={12}>
+              <Col xl={4} md={12} lg={6} xs={12}>
                 <Card className="mt-4 mb-3 mx-auto">
-                  <Card.Img className="card-img" variant="top" src={SkyPic}/>
                   <Card.Body>
                     <Card.Title>{employer.companyName}</Card.Title>
-                    <Card.Text className="link">
+                    <div className="divider"/>
+                    <Card.Text  className="link">
                       <a href={
                         employer.webAddress.includes('//') ?
                           employer.webAddress :

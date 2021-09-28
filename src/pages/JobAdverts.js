@@ -5,19 +5,26 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const JobAdverts = () => {
   return (
-    <div>
-      <h3 className="mt-3 fw-bold">JOB ADVERTS</h3>
       <Container>
+      <h3
+        style={{
+          fontSize: "4rem",
+          textAlign: "right",
+          fontFamily: "'Bebas Neue', cursive",
+          letterSpacing: "1rem",
+          textShadow: "4px 5px #ccc",
+          color: "#42466e"
+        }}
+        className="mt-4 fw-bold">JOB ADVERTS</h3>
         <Row>
-          <Col sm={12} md={12} lg={12} xl={4}>
-            <AdvertSearchSide />
+          <Col sm={12} md={12} lg={12} xl={10}>
+            <AdvertsSection />
           </Col>
-          <Col sm={12} md={12} lg={12} xl={8}>
-            <AdvertsSection/>
+          <Col sm={12} md={12} lg={12} xl={2}>
+            <AdvertSearchSide />
           </Col>
         </Row>
       </Container>
-    </div>
   )
 }
 

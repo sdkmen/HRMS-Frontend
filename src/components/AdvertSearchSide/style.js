@@ -1,27 +1,22 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-.card {
-  border: 0px;
-  border-radius: 12px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 18rem;
+.form-container{
+  position: fixed;
+  text-align: left;
+  width: 15rem;
+  height: 40rem;
 }
-.form-control, .form-select {
-  width: 12rem;
-  margin-left: 2rem;
-  border-radius: 10px;
-}
-.card-title {
-  color: #13505b;
-}
-.button {
-  background-color: #2f5c8a;
-  color: #FFFFFF;
-  border: 0px;
-  border-radius: 8px;
-  &:hover {
-    background-color: #366ca3;
+.button{
+  background-color: #284b63;
+  color: #fff;
+  width: 15rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  &:hover{
+    background-color: #315d7a;
+    color: #fff;
   }
 }
 `

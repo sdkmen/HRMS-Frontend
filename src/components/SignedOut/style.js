@@ -6,7 +6,7 @@ export const Styles = styled.div`
   color: #3b3e40;
   font-weight: bold;
   border: 0px;
-  border-radius: 7px;
+  border-radius: 5px;
   &:hover{
     background: #86b2df;
     color: #fefae0;

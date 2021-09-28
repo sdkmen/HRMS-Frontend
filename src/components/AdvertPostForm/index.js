@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import 'semantic-ui-css/semantic.min.css'
 import * as Yup from "yup"
 import { Formik, useFormik } from 'formik'
 import JobAdvertService from '../../services/jobAdvertService'
@@ -176,7 +175,7 @@ const AdvertPostForm = () => {
                   <Grid.Column width={8}>
                     <Form.Input
                       type="number"
-                      min="0"
+                      min="1"
                       name="freePositionNo"
                       label="Number of free position"
                       placeholder="Available position number"
@@ -195,7 +194,7 @@ const AdvertPostForm = () => {
                       min="0"
                       name="minSalary"
                       label="Minimum salary"
-                      placeholder="Min salary"
+                      placeholder="3000$"
                       onChange={(event, data) => formik.setFieldValue("minSalary", data.value)}
                       value={formik.values.minSalary}
                     />
@@ -206,7 +205,7 @@ const AdvertPostForm = () => {
                       min="0"
                       name="maxSalary"
                       label="Maximum salary"
-                      placeholder="Max salary"
+                      placeholder="5000$"
                       onChange={(event, data) => formik.setFieldValue("maxSalary", data.value)}
                       value={formik.values.maxSalary}
                     />

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import menu from "../../assets/menu.png"
 
 export const Styles = styled.div`
+text-align: left !important;
 .navbar-brand {
   color: #fff;
   font-weight: bold;

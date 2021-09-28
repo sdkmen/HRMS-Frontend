@@ -7,7 +7,7 @@ const SignedOut = ({ signIn }) => {
     <Styles>
       <Nav className="mt-2">
         <Nav.Item>
-          <Button className="button me-1 mb-2" onClick={signIn}>Sign In</Button>
+          <Button className="button me-2 mb-3" onClick={signIn}>Sign In</Button>
         </Nav.Item>
         <Nav.Item>
           <Button variant="light" className="button">Sign Up</Button>

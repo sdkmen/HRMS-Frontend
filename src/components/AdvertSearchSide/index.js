@@ -1,47 +1,88 @@
 import React, { useState, useEffect } from "react"
-import { Card, Button, Form } from "react-bootstrap"
 import { Styles } from "./style"
 import JobTitleService from "../../services/jobTitleService"
+import WorkHourService from '../../services/workHourService'
+import EmployerService from '../../services/employerService'
+import CityService from '../../services/cityService'
+import { Button, Form } from "semantic-ui-react"
 
 const AdvertSearchSide = () => {
 
-  const [jobTitles, setJobTitles] = useState([]);
+  const [cities, setCities] = useState([])
+  const [jobTitles, setJobTitles] = useState([])
+  const [workHours, setWorkHours] = useState([])
+  const [employers, setEmployers] = useState([])
 
   useEffect(() => {
-    let jobTitleService = new JobTitleService();
-    jobTitleService.getJobTitles().then(result => setJobTitles(result.data.data))
-  })
+    let cityService = new CityService()
+    let jobTitleService = new JobTitleService()
+    let workHourService = new WorkHourService()
+    let employerService = new EmployerService()
+
+    cityService.getCities().then((result) => setCities(result.data.data))
+    jobTitleService.getJobTitles().then((result) => setJobTitles(result.data.data))
+    workHourService.getWorkHours().then((result) => setWorkHours(result.data.data))
+    employerService.getAllEmployers().then((result) => setEmployers(result.data.data))
+  }, [])
+
+  const cityOptions = cities.map((city, index) => ({
+    key: index,
+    text: city.cityName,
+    value: city.id
+  }))
+
+  const employerOptions = employers.map((employer, index) => ({
+    key: index,
+    text: employer.companyName,
+    value: employer.id
+  }))
+
+  const jobTitleOptions = jobTitles.map((jobTitle, index) => ({
+    key: index,
+    text: jobTitle.jobTitle,
+    value: jobTitle.id
+  }))
+
+  const workHourOptions = workHours.map((workHour, index) => ({
+    key: index,
+    text: workHour.hourType,
+    value: workHour.id
+  }))
 
   return (
     <Styles>
-      <div>
-        <Card className="mt-4 mx-auto">
-          <Card.Body>
-            <Card.Title><h4>Search Job Advert</h4></Card.Title>
+      <div className="form-container">
             <Form>
-              <Form.Group className="mb-3 mt-4" controlId="minSalary">
-                <Form.Control min="0" type="number" placeholder="Min Salary" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="maxSalary">
-                <Form.Control min="0" type="number" placeholder="Max Salary" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="jobTitle">      
-                <Form.Select>
-                <option>Choose A Position</option>
-                  {
-                    jobTitles.map(jobTitle => (
-                      <option key={jobTitle.id}>{jobTitle.jobTitle}</option>
-                    ))
-                  }
-                </Form.Select>
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="companyName">
-                <Form.Control type="text" placeholder="Company Name" />
-              </Form.Group>
-              <Button className="button" type="submit">Search</Button>
+              <Form.Field>
+              <Form.Select
+              label="Job Title"
+              placeholder="Available Positions"
+              options={jobTitleOptions}
+              />
+              </Form.Field>
+              <Form.Field>
+              <Form.Select
+              label="City"
+              placeholder="Cities"
+              options={cityOptions}
+              />
+              </Form.Field>
+              <Form.Field>
+              <Form.Select
+              label="Work Hour"
+              placeholder="Work Hour Types"
+              options={workHourOptions}
+              />
+              </Form.Field>
+              <Form.Field>
+              <Form.Select
+              label="Employer"
+              placeholder="Companies"
+              options={employerOptions}
+              />
+              </Form.Field>
+              <Button type="submit" content="Filter"/> 
             </Form>
-          </Card.Body>
-        </Card>
       </div>
     </Styles>
   )

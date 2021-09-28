@@ -16,21 +16,21 @@ const CandidatesList = () => {
       <Row>
         {
           candidates.map(candidate => (
-            <Col xl={3} md={6} lg={4} xs={12}>
+            <Col xl={2} md={4} lg={3} xs={12}>
               <Card className="mt-4 mx-auto mb-3">
                 <Card.Img className="card-img mt-3" variant="top" src={candidate.pictureUrl} />
                 <Card.Body>
                   <Card.Title className="mt-1">
                     {candidate.firstName} {candidate.lastName}
                   </Card.Title>
-                  <Card.Text className="mt-4">
-                    <h6>{candidate.email}</h6>
+                  <Card.Text className="mt-3">
+                    <p>{candidate.email}</p>
                   </Card.Text>
                   <Card.Text>
-                    <h6>{candidate.birthOfYear}</h6>
+                    <p>{candidate.birthOfYear}</p>
                   </Card.Text>
                   <Link to={`/cv/${candidate.id}`}>
-                    <Button className="mt-3 button" variant="primary">Show CV</Button>
+                    <Button className="mt-1 button" variant="primary">Show CV</Button>
                   </Link>
                 </Card.Body>
               </Card>
