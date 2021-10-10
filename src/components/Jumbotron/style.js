@@ -31,10 +31,9 @@ z-index: -2;
 }
 .button{
   background: #dfe3df;
-  border-radius: 15px;
+  border-radius: 7px;
   height: 45px;
   border:0px;
-  font-weight: bold;
   width: 8rem;
   color: #000;
   &:hover {

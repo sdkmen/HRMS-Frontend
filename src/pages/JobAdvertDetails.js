@@ -33,7 +33,7 @@ const JobAdvertDetails = () => {
                   <div className="first-letter">{splitFirstLetter(jobAdvertDetail.companyName)}</div>
                   <Card.Text className="mt-5 company">{jobAdvertDetail.companyName}</Card.Text>
                 </div>
-                <Button className="mt-3 btn" variant="success">Apply</Button>
+                <Button style={{width:'10rem'}} className="mt-3 fw-bold" variant="success">Apply</Button>
               </Card.Body>
             </Card>
           ))

@@ -14,21 +14,19 @@ export const Styles = styled.div`
   border-bottom: 2px solid #4a4e69;
 }
 .company-container{
-  position: relative;
   width: 18rem;
   height: 100px;
   margin-top: 30px;
+  text-align: center;
 }
 .company{
-  position: absolute;
-  left: 7.5rem;
-  top: -6px;
   color: #4a4e69;
   font-size: 1.5rem;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 2px;
 }
 .first-letter{
-  position: absolute;
   background-color: #22223b;
   color: #fff;
   justify-content: center;
@@ -39,8 +37,7 @@ export const Styles = styled.div`
   font-size: 2rem;
   border-radius: 10px;
   font-weight: bold;
-  top: 30px;
-  left: 60px;
+  display: inline-block;
 }
 .free-position{
   font-size: 1.5rem;
@@ -108,9 +105,5 @@ export const Styles = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
   margin-top:58px;
-}
-.btn{
-  width: 10rem;
-  font-weight: bold;
 }
 `

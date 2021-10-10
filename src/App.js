@@ -20,6 +20,7 @@ import SignUp from './pages/SignUp';
 import JobAdvertPost from './pages/JobAdvertPost';
 import NoMatch from './pages/NoMatch';
 import EmployeePanel from './pages/EmployeePanel';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <Router>
       <BackgroundImage>
         <div className="App">
+          <ToastContainer position="bottom-right"/>
         {!isPanelRendering && <Menu />}
           <Switch>
             <Route exact path="/" component={Home} />
@@ -41,7 +43,7 @@ function App() {
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
             <Route path="/panel/employer/postadvert" component={JobAdvertPost} />
-            <Route path="/panel/employee/unconfirmedadverts" component={EmployeePanel} />
+            <Route path="/panel/employee" component={EmployeePanel} />
             <Route component={NoMatch} />
           </Switch>
           {!isPanelRendering && <Footer />}

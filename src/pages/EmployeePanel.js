@@ -1,11 +1,21 @@
 import React from 'react'
+import { Route, Switch, useLocation } from 'react-router'
+import EmployeePanelMenu from '../components/EmployeePanelMenu'
 import UnconfirmedAdverts from '../components/UnconfirmedAdverts'
+import {EmployeePanelOpenPage} from '../components/EmployeePanelOpenPage'
 
 const EmployeePanel = () => {
+  
+const location = useLocation()
+const isFeatureRendering = location.pathname.startsWith("/panel/employee/")
+
   return (
     <div>
-      <h3 className="mt-3 fw-bold">Unconfirmed Job Adverts</h3>
-      <UnconfirmedAdverts/>
+      <EmployeePanelMenu />
+      {!isFeatureRendering && <EmployeePanelOpenPage/>}
+      <Switch>
+        <Route path="/panel/employee/unconfirmedadverts" component={UnconfirmedAdverts} />
+      </Switch>
     </div>
   )
 }

@@ -18,7 +18,7 @@ const Jumbotron = () => {
           </Container>
         </Title>
         <Link to="/jobadverts">
-          <Button className="button mb-5 mt-5 fw-light" variant="light">
+          <Button className="button mb-5 mt-5 fw-bold" variant="light">
             Get Started
           </Button>
         </Link>
