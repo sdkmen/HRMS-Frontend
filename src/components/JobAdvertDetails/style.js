@@ -51,6 +51,7 @@ export const Styles = styled.div`
   color: #fff !important;
   background-color: #4a4e69;
   border-radius: 5px;
+  display: inline-block;
 }
 .city {
   display: inline-block;

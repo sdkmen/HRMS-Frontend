@@ -6,6 +6,7 @@ height: 100vh;
 background: #293241;
 float: left;
 text-align: center;
+position: fixed;
 `
 
 export const MenuTitle = styled.div`
@@ -35,7 +36,7 @@ margin-top: 20px;
   text-decoration: none;
   color: #fff;
   &:hover{
-    color: #98c1d9;
+    border-bottom: 1px solid #fff;
   }
 }
 `

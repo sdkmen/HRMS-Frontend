@@ -24,7 +24,7 @@ const JobAdvertDetails = () => {
                 <Card.Title className="mt-5">{jobAdvertDetail.jobTitle}</Card.Title>
                 <div className="divider-horizontal" />
                 <Card.Text className="city">City: {jobAdvertDetail.cityName}</Card.Text>
-                <Card.Text className="free-position">Number of Free Position: <p className="d-inline-block free-position-no">{jobAdvertDetail.freePositionNo}</p></Card.Text>
+                <Card.Text className="free-position">Number of Free Position: <p className="free-position-no">{jobAdvertDetail.freePositionNo}</p></Card.Text>
                 <Card.Text className="description mt-5"><p>Job Description:</p>{jobAdvertDetail.jobDefinition}</Card.Text>
                 <Card.Text className="mt-5 salary"><p>Min Salary: <span className="money">{jobAdvertDetail.minSalary}$</span></p></Card.Text>
                 <Card.Text className="mt-5 ms-2 salary"><p>Max Salary: <span className="money">{jobAdvertDetail.maxSalary}$</span></p></Card.Text>

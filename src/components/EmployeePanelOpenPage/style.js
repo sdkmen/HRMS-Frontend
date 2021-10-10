@@ -18,4 +18,5 @@ font-size: 3rem;
 font-family: 'Bebas Neue', cursive;
 color: #343a40;
 margin-top: 50px;
+opacity: 0.9;
 `
